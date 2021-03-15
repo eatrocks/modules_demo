@@ -1,0 +1,22 @@
+{
+  "name": "modules_demo",
+  "version": "1.0.0",
+  "description": "Container for module demo app & modules",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf ./myapp/node_modules ./myapp/package-lock.json ./esmodule/node_modules ./esmodule/package-lock.json ./cjsmodule/node_modules ./cjsmodule/package-lock.json;",
+    "presetup": "npm run clean",
+    "setup": "cd esmodule; npm i; cd ../cjsmodule; npm i; cd ../myapp; npm i;",
+    "start": "cd myapp; npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eatrocks/modules_demo.git"
+  },
+  "author": "Bruce Campbell <eatrocks@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/eatrocks/modules_demo/issues"
+  },
+  "homepage": "https://github.com/eatrocks/modules_demo#readme"
+}

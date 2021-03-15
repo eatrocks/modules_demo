@@ -1,0 +1,16 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Consumes a pure ES6 Module",
+  "type": "module",
+  "scripts": {
+    "start": "node go.js"
+  },
+  "author": "Bruce Campbell <eatrocks@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "dependencies": {
+    "esmodule": "file:../esmodule",
+    "cjsmodule": "file:../cjsmodule"
+  }
+}
